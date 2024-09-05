@@ -1,0 +1,22 @@
+.avatar {
+  height: 560px;
+  width: 100%;
+  background-color: #e3bc10; 
+  background-image: url('/images/asfalt-light.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar img {
+  margin-top: 180px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.avatar h2 {
+  margin-top: 30px; 
+  font-family: 'Source Sans 3', sans-serif;
+  color: #FFFFFF;
+}
+

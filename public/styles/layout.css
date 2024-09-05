@@ -1,0 +1,80 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Bungee', sans-serif;
+}
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 24px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+
+main {
+  max-width: 90%;
+  margin: 0 auto; /* Center align the element */
+  background-color: inherit; /* Inherit the background color from the body */
+}
+
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+/* Media Query for Desktop */
+@media (min-width: 1024px) {
+  .avatar{
+    margin-left: 2em;
+  }
+
+  .layout-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+
+  .user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
+  }
+
+}

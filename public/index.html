@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Information -->
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:wght@200&display=swap"
+    rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Header CSS -->
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+
+  <!-- New Tweet CSS -->
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- char-counter.js -->
+  <script src="scripts/composer-char-counter.js"></script>
+
+  <!-- user-helper.js -->
+
+  <!-- timeago.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <title>Tweeter - Home Page</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
+</head>
+
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+
+    <div class="left-logo">
+      <span>tweeter</span>
+    </div>
+
+    <div class="right-logo">
+      <span class="write-tweet">Write a new tweet</span>
+      <span><i class="material-symbols-outlined">keyboard_double_arrow_down</i></span>
+    </div>
+
+  </nav>
+  <div class="layout-container">
+    <header>
+      <div class="avatar">
+        <img src="/images/profile-hex.png">
+        
+          <h2>Yeji Ha<h2>
+      </div>
+    </header>
+    <div class="right-container">
+      <main class="container">
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form id="new-tweet-form" method="POST" action="/tweets">
+
+            <!-- Error message element -->
+            <div id="tweet-error" style="display: none;
+          color: red;
+          border: 1px solid red;
+          padding: 10px;
+          margin: 20px 0;
+          border-radius: 5px;
+          background-color: #ffecec;
+          font-family: 'Source Sans 3', sans-serif"></div>
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div class="actionbutton">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+
+          </form>
+        </section>
+
+        <section id="tweets-container">
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+</body>
+
+</html>
