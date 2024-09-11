@@ -1,8 +1,9 @@
-
-
 $(document).ready(function () {
-    
+  // $("#hiddenContent").slideUp( "fast", function() {
 
+  // });
+
+  //only for render
   const renderTweets = function (tweets) {
     const $tweetsContainer = $('#tweets-container');
     $('#tweets-container').empty(); // Clear existing tweets
@@ -43,8 +44,7 @@ $(document).ready(function () {
   `);
   $tweet.find('.tweet-text').text(tweet.content.text);
 
-
-    return $tweet;
+  return $tweet;
   }
 
 
@@ -62,11 +62,10 @@ $(document).ready(function () {
   };
 
 
+
 //submit the new tweet with proper error message.
 $('#new-tweet-form').submit(function (event) {
   event.preventDefault();
-
-  const tweetText = $('#tweet-text').val().trim(); // Get and trim the tweet text
 
   $('#tweet-error').slideUp(() => {
     const tweetText = $('#tweet-text').val().trim(); // Get and trim the tweet text
@@ -84,8 +83,6 @@ $('#new-tweet-form').submit(function (event) {
     }
 
   const formData = $(this).serialize();
-  const decodedFormData = decodeURIComponent(formData);
-
 
   $.ajax({
     url: '/tweets', // Ensure this is the correct endpoint
@@ -102,7 +99,21 @@ $('#new-tweet-form').submit(function (event) {
 
 });
 });
-  loadTweets();
+
+let n = 0;
+$('#right-button').on("click", function() {
+  n++;
+  if ((n % 2) == 1) {
+    $("#hiddenContent").slideDown( "fast", function() {
+    });
+  } else {
+    $("#hiddenContent").slideUp( "fast", function() {
+    });
+  }
+ 
+});
+
+loadTweets();
 
 });
 

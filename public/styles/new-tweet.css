@@ -1,15 +1,14 @@
 .new-tweet h2 {
   font-family: 'Bungee', sans-serif;
+  margin-top: 40px;
 }
 
 #tweet-text {
   border: none;
   outline: none;
-
   border-bottom: 2px solid #4056A1; 
   font-family: 'Source Sans 3', sans-serif ;
   width: 100%;
- 
   background-color: transparent;
   resize: none;
   overflow: hidden;
@@ -24,13 +23,14 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 button {
   background-color: #4056A1;
   color: white;
   font-family: 'Bungee', sans-serif;
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 10px 20px; 
   border: none;
 }
 
@@ -55,7 +55,6 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   align-items: center;
   background-color: #f4f1ec;
 }
