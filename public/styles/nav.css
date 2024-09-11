@@ -21,6 +21,19 @@ nav {
   margin-bottom: 5px;
 }
 
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px); /* Move down 10px */
+  }
+  100% {
+    transform: translateY(0); /* Move back to the original position */
+  }
+}
+
+
 .right-logo {
   display: flex;
   flex-direction: column;
@@ -29,6 +42,17 @@ nav {
   margin-top: 18px;
   margin-right: 7px;
 }
+
+.right-logo:hover {
+  transform: scale(1.07); /* Increase size by 20% */
+  transition: transform 0.2s; /* Add smooth transition */
+}
+
+.material-symbols-outlined {
+  display: inline-block; /* To apply transform on inline elements */
+  animation: upAndDown 1s ease-in-out infinite; /* Apply the animation */
+}
+
 
 .write-tweet {
   font-family: "Work Sans", sans-serif;
