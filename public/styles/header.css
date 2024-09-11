@@ -1,7 +1,7 @@
 .avatar {
   height: 560px;
   width: 100%;
-  background-color: #e3bc10; 
+  background-color: #D3D0CBFF; 
   background-image: url('/images/asfalt-light.png');
   display: flex;
   flex-direction: column;
