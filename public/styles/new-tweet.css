@@ -109,15 +109,15 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  float: right;
+  margin-right: 10px;
+  color: #4056A1;
+
 
 }
 .icons span:hover i {
   color: red; /* Change icon color to red on hover */
 }
 
-.icons .material-symbols-outlined {
-  float: right;
-  margin-right: 10px;
-  color: #4056A1;
-}
+
 

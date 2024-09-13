@@ -26,7 +26,7 @@ nav {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(5px); /* Move down 10px */
+    transform: translateY(5px); /* Move down 5px */
   }
   100% {
     transform: translateY(0); /* Move back to the original position */
@@ -48,7 +48,7 @@ nav {
   transition: transform 0.2s; /* Add smooth transition */
 }
 
-.material-symbols-outlined {
+#right-button .material-symbols-outlined {
   display: inline-block; /* To apply transform on inline elements */
   animation: upAndDown 1s ease-in-out infinite; /* Apply the animation */
 }
