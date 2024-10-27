@@ -25,14 +25,6 @@ Follow these steps to run the project locally:
 
 
 
-## Dependencies
-
-- Express
-- Node 5.10.x or above
-- body-parser
-- chance
-- md5
-
 ## Final Product
 
 - Homepage: A simple and clean interface with user details at the top with the responsive design. 
@@ -42,10 +34,10 @@ Follow these steps to run the project locally:
 ![](/public/images/homepage_1.gif)
 
 
-- Compose Tweet: A tweet input area with a character counter.
+- Compose Tweet: A tweet input area with a live character counter that updates as you type and displays the real posting time for each tweet.
 
 
-![](/public/images/Screenshot_compose%20tweet.png)
+![](/public/images/compose_tweet.gif)
 
 
 - Error Handling: Alerts for tweets exceeding the character limit or empty submissions.
